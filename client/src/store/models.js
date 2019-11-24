@@ -1,4 +1,3 @@
 // тут подключаем все модели
 
-export const models =  {
-};
+export const models = {};
