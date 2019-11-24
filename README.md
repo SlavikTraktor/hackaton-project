@@ -11,4 +11,4 @@ This project is distributed under MIT [license](./LICENSE).
 To start you should go to client folder and type `npm i` command, then `npm start`.
 
 # Development
-Run `git config core.hooksPath .githooks` in project folder before you'll make commit. This command enables githook that runs eslint before every commit.
+Run `git config core.hooksPath .githooks` in project folder before you'll make first commit. This command enables githook that runs eslint before every commit.
