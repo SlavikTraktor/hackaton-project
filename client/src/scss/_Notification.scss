@@ -1,0 +1,122 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  nav {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+    background-color: $color-grey-2;
+    border-radius: 40px;
+    padding: 12px 15px;
+
+    .nav-item {
+      text-align: center;
+      color: $color-grey-5;
+      width: 120px;
+      padding: 18px 5px;
+      margin-right: 15px;
+      background-color: $color-grey-3;
+      text-decoration: none;
+      transition: 0.2s;
+      border-radius: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: $color-blue-3;
+        color: $color-grey-3;
+      }
+    }
+  }
+}
+
+aside.select-type {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: $color-grey-2;
+  border-radius: 40px;
+  padding: 5px;
+
+  .type-item {
+    text-align: center;
+    color: $color-grey-5;
+    width: 120px;
+    padding: 15px 5px;
+    margin-right: 3px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 35px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $color-blue-3;
+      color: $color-grey-3;
+    }
+  }
+}
+
+.trash-icon {
+  width: 25px;
+  height: 30px;
+  background-image: url('/icons/trashbox-icon.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.notification-page {
+  .notification-list {
+    padding: 20px 0;
+
+    .notification {
+      display: flex;
+      margin-bottom: 15px;
+      
+      .notification-content {
+        background-color: $color-blue-3;
+        flex-grow: 95;
+        font-size: 18px;
+        border-radius: 15px;
+
+        .notification-header {
+          display: flex;
+          align-items: center;
+          padding: 12px 25px;
+
+          .title {
+            padding: 14px 35px;
+            background-color: $color-blue-0;
+            color: $color-grey-5;
+            width: 180px;
+            text-align: center;
+            font-weight: 100;
+            border-radius: 12px;
+          }
+
+          .time {
+            margin-left: auto;
+          }
+        }
+  
+        .notification-body {
+          padding: 15px;
+          padding-top: 5px;
+        }
+      }
+
+      .notification-icons {
+        flex-grow: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
