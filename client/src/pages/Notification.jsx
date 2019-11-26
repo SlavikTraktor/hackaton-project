@@ -5,21 +5,22 @@ export const Notification = () => (
     <header>
       <div className="wrapper">
         <nav>
-          <a href="/" className="nav-item active">
-            Уведомления
-          </a>
-          <a href="/" className="nav-item">
-            Подписки
-          </a>
-          <a href="/" className="nav-item">
-            Поиск
-          </a>
-          <a href="/" className="nav-item">
-            Карта
-          </a>
-          <a href="/" className="nav-item">
-            Профиль
-          </a>
+          <div className="main-nav">
+            <a href="/" className="nav-item active">
+              Уведомления
+            </a>
+            <a href="/" className="nav-item">
+              Подписки
+            </a>
+            <a href="/" className="nav-item">
+              Профиль
+            </a>
+          </div>
+          <div className="extra-nav">
+            <a href="/" className="nav-map nav-icon"></a>
+            <div className="nav-separator"></div>
+            <a href="/" className="nav-search nav-icon"></a>
+          </div>
         </nav>
       </div>
     </header>
@@ -38,7 +39,7 @@ export const Notification = () => (
                 <h3 className="title">*author*</h3>
                 <div className="time">3 минуты назад</div>
               </div>
-              <div className="notification-body">Площадка зыкрыта на ремонт</div>
+              <div className="notification-body">Площадка закрыта на ремонт</div>
             </div>
             <div className="notification-icons">
               <div className="trash-icon" />
